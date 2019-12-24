@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/txt_info"
+            style="@style/TextAppearance.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Graphical representation of the flow variation (Mo) in function of time (s). "
+            android:textAlignment="center"
+            android:textColor="@color/dark_grey_2" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/linechart"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/txt_info"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_container" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linechart"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_connect_quality"
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linechart"
+                    android:layout_centerHorizontal="true"
+                    android:text="- Connection Quality -"
+                    android:textAlignment="center"
+                    android:textColor="@color/func_blue"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txt_flow_status"
+                    style="@style/TextAppearance.SubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_connect_quality"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:background="@color/dark_grey_2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- Average Flow (Mo/s) -"
+                    android:textAlignment="center"
+                    android:textColor="@color/func_blue"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txt_average_flow"
+                    style="@style/TextAppearance.SubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-6dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/green" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

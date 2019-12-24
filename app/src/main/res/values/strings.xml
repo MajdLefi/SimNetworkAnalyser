@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sim Network Analyser</string>
+    <string name="tab_text_1">3G</string>
+    <string name="tab_text_2">4G</string>
+
+    <string name="title_activity_network_info">Device Info</string>
+    <string name="title_activity_device_info">Network Info</string>
+    <string name="title_activity_flow_test">Flow test</string>
+    <string name="title_activity_about_us">About Us</string>
+
+
+</resources>

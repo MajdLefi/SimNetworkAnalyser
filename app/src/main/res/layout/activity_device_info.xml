@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".ui.deviceinfo.DeviceInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.Normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connection status"
+                    android:textColor="@color/dark_grey_2" />
+
+                <TextView
+                    style="@style/TextAppearance.Normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Signal level"
+                    android:textColor="@color/dark_grey_2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/connect_status"
+                    style="@style/TextAppearance.Normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="undefined"
+                    android:textAlignment="center"
+                    android:textColor="@color/func_red" />
+
+                <ImageView
+                    android:id="@+id/signal_strength"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-6dp"
+                    android:src="@drawable/signal_strength" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_container"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Device id (IMEI)"
+                    android:textColor="@color/dark_grey_2" />
+
+                <TextView
+                    android:id="@+id/device_id"
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/func_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Software version"
+                    android:textColor="@color/dark_grey_2" />
+
+                <TextView
+                    android:id="@+id/software_version"
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/func_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phone type"
+                    android:textColor="@color/dark_grey_2" />
+
+                <TextView
+                    android:id="@+id/phone_type"
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/func_blue" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/dark_grey_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="SIM Operator name"
+                    android:textColor="@color/dark_grey_2" />
+
+                <TextView
+                    android:id="@+id/sim_operator_name"
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/func_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="SIM Country"
+                    android:textColor="@color/dark_grey_2" />
+
+                <TextView
+                    android:id="@+id/sim_country"
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/func_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="SIM serial n°"
+                    android:textColor="@color/dark_grey_2" />
+
+                <TextView
+                    android:id="@+id/sim_serial_number"
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/func_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="SIM phone number"
+                    android:textColor="@color/dark_grey_2" />
+
+                <TextView
+                    android:id="@+id/sim_phone_number"
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/func_blue" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/dark_grey_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Network type"
+                    android:textColor="@color/dark_grey_2" />
+
+                <TextView
+                    android:id="@+id/network_type"
+                    style="@style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/func_blue" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

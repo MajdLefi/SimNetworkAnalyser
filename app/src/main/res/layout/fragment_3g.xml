@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="MNC" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="MCC" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="CID" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="LAC" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Mobile Rx byte" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Mobile Tx Byte" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Mobile Rx Paquets" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Mobile Tx Paquets" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="RSCP" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Ber" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Rssi" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Ec/Io" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="PSC" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mnc"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="501" />
+
+            <TextView
+                android:id="@+id/mcc"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="605" />
+
+            <TextView
+                android:id="@+id/cid"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="7282772" />
+
+            <TextView
+                android:id="@+id/lac"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="10061" />
+
+            <TextView
+                android:id="@+id/mobilerxbyte"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/mobiletxbyte"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/mobilerxpaquets"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/mobiletxpaquets"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/rscp"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/ber"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/rssi"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:id="@+id/ecio"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/psc"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

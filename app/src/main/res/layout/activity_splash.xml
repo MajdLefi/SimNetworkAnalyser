@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+
+    <LinearLayout
+        android:id="@+id/ll_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_3g"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/g3" />
+
+        <TextView
+            android:id="@+id/txt_app_name"
+            style="@style/TextAppearance.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="-30dp"
+            android:text="SIM Network\nAnalyser"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="33sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_4g"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/g4" />
+
+    </LinearLayout>
+
+</RelativeLayout>

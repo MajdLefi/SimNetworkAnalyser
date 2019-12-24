@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="RSRP1" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="RSRP2" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Cell ID" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="MCC" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="MNC" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="PCI" />
+
+            <TextView
+                style="@style/TextAppearance.label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="TAC" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rsrp1"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/rsrp2"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="2147483647" />
+
+            <TextView
+                android:id="@+id/cellid"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/mcc"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/mnc"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/pci"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tac"
+                style="@style/TextAppearance.measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

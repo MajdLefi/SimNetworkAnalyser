@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="colorPrimary">#ED1B24</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#ED1B24</color>
+
+    <!-- -->
+
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="green">#3CB371</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- ## Orange ## -->
+    <color name="orange">#FF7900</color>
+
+    <!-- Dark -->
+    <color name="orange_dark">#F16000</color>
+
+    <!-- Light -->
+    <color name="orange_light">#FAD4B2</color>
+
+    <!-- ## Grey ## -->
+    <color name="grey">#808080</color>
+
+    <!-- ## Red ## -->
+
+    <color name="red">#ED1B24</color>
+    <color name="red_light">#F25F65</color>
+    <color name="red_dark">#A51219</color>
+
+    <!-- Dark -->
+    <color name="dark_grey_4">#222222</color>
+    <color name="dark_grey_3">#333333</color>
+    <color name="dark_grey_2">#666666</color> <!-- can be used as text on white -->
+    <color name="dark_grey_1">#999999</color> <!-- can be used as text on black -->
+
+    <!-- Light -->
+    <color name="light_grey_5">#CCCCCC</color>
+    <color name="light_grey_4">#DDDDDD</color>
+    <color name="light_grey_3">#EEEEEE</color>
+    <color name="light_grey_2">#F6F6F6</color>
+    <color name="light_grey_1">#FAFAFA</color>
+
+
+    <!--## FUNCTIONAL COLOURS ## -->
+
+    <!-- Red (negative, delete, no) as background: white or black text -->
+    <color name="func_red">#CD3C14</color>
+
+    <!-- Green (positive, save, yes) as background: black text -->
+    <color name="func_green">#32C832</color>
+
+    <!-- Yellow (warning, alert, caution) as background: black text -->
+    <color name="func_yellow">#FFCC00</color>
+
+    <!-- Blue (neutral, information, new) as background: black or white text -->
+    <color name="func_blue">#527EDB</color>
+
+</resources>
